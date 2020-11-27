@@ -23,6 +23,7 @@
     grid-template-rows: 50% 50%; 
     column-gap: 10px;
     row-gap: 15px;
+    justify-items: center;
   }
 </style>
 
