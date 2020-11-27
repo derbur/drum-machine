@@ -12,7 +12,7 @@
   }
   
   function handleKeydown(e) {
-    if(e.key.toLowerCase() === triggerKey ) {
+    if(e.key.toLowerCase() === triggerKey.toLowerCase() ) {
       playSound();
     }
   }
@@ -29,10 +29,28 @@
       border: 1px solid #1e1e1e;
       border-radius: 3px;
     }
+    button {
+      position: relative;
+    }
+    .sound-name {
+      position: absolute;
+      top: 0;
+      margin: 8px 0px 0px 8px;
+    }
+    .trigger-key {
+      font-size: 2rem;
+    }
 </style>
 
 <svelte:window on:keydown={handleKeydown} />
-<button class="pad" on:click={playSound}>{ soundName } | { triggerKey }</button>
+<button class="pad" on:click={playSound}>
+  <div class="sound-name">
+    { soundName }
+  </div>
+  <div class="trigger-key">
+    { triggerKey }
+  </div>
+</button>
 <audio bind:this={audio} src={soundSrc}>
   <track kind="captions" />
 </audio>

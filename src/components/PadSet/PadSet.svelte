@@ -3,16 +3,17 @@
 
   interface Sound {
     trigger: string,
+    name: string,
     source: string
   }
 
   const soundList: Sound[] = [ 
-                      { trigger: 'q', source: 'Clap1.wav' },
-                      { trigger: 'w', source: 'Hats2.wav' },
-                      { trigger: 'e', source: 'HH2.wav' },
-                      { trigger: 'a', source: 'Kik12.wav' },
-                      { trigger: 's', source: 'OH21.wav' },
-                      { trigger: 'd', source: 'Snare12.wav' }
+                      { trigger: 'Q', name: 'Clap', source: 'Clap1.wav' },
+                      { trigger: 'W', name: 'Hi-Hat 1', source: 'Hats2.wav' },
+                      { trigger: 'E', name: 'Hi-Hat 2', source: 'HH2.wav' },
+                      { trigger: 'A', name: 'Kick', source: 'Kik12.wav' },
+                      { trigger: 'S', name: 'Open-Hat', source: 'OH21.wav' },
+                      { trigger: 'D', name: 'Snare', source: 'Snare12.wav' }
                     ];
 </script>
 
@@ -29,6 +30,6 @@
 
 <div class="container">
   { #each soundList as sound }
-    <Pad soundName={sound.source} soundSrc={`samples/kit-1/${sound.source}`} triggerKey={sound.trigger} />
+    <Pad soundName={sound.name} soundSrc={`samples/kit-1/${sound.source}`} triggerKey={sound.trigger} />
   { /each }
 </div>
