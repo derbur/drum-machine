@@ -10,9 +10,9 @@
                       { trigger: 'q', source: 'Clap1.wav' },
                       { trigger: 'w', source: 'Hats2.wav' },
                       { trigger: 'e', source: 'HH2.wav' },
-                      { trigger: 'r', source: 'Kik12.wav' },
-                      { trigger: 't', source: 'OH21.wav' },
-                      { trigger: 'y', source: 'Snare12.wav' }
+                      { trigger: 'a', source: 'Kik12.wav' },
+                      { trigger: 's', source: 'OH21.wav' },
+                      { trigger: 'd', source: 'Snare12.wav' }
                     ];
 </script>
 

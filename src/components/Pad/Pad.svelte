@@ -20,16 +20,16 @@
 </script>
 
 <style>
-  /* .pad {
-    width: 200px;
-    height: 200px;
-    background: rgba(0,0,0,0.5);
-    display: inline-block;
-    margin: 7.5px 5px;
-    box-shadow: 0 4px 0 #1e1e1e, 0px 0px 10px 1px rgba(0,0,0,0.5);
-    border: 1px solid #1e1e1e;
-    border-radius: 3px;
-  } */
+    .pad {
+      width: 200px;
+      height: 200px;
+      background: rgba(0,0,0,0.5);
+      display: inline-block;
+      margin: 7.5px 5px;
+      box-shadow: 0 4px 0 #1e1e1e, 0px 0px 10px 1px rgba(0,0,0,0.5);
+      border: 1px solid #1e1e1e;
+      border-radius: 3px;
+    }
 </style>
 
 <svelte:window on:keydown={handleKeydown} />
